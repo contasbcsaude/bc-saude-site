@@ -581,7 +581,7 @@ const Index = () => {
             </div>
             <div className="sobre-box reveal">
               <img
-                src="img/foto-sobre.jpg"
+                src="https://i.imgur.com/SgsTgaY.jpeg"
                 alt="Equipe B&C Saúde"
                 className="sobre-box-img"
               />
@@ -600,7 +600,7 @@ const Index = () => {
           <div className="services-grid">
             <div className="service-card reveal">
               <img
-                src="img/foto-sobre.jpg"
+                src="https://i.imgur.com/SgsTgaY.jpeg"
                 alt="Medicina do Trabalho"
                 className="service-img"
               />

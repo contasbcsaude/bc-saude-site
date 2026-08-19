@@ -600,7 +600,7 @@ const Index = () => {
           <div className="services-grid">
             <div className="service-card reveal">
               <img
-                src="/img/foto-sobre.jpg"
+                src="img/foto-sobre.jpg"
                 alt="Medicina do Trabalho"
                 className="service-img"
               />

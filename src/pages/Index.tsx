@@ -581,7 +581,7 @@ const Index = () => {
             </div>
             <div className="sobre-box reveal">
               <img
-                src="https://i.imgur.com/7qpkRW7.jpeg"
+                src="https://images.pexels.com/photos/8376154/pexels-photo-8376154.jpeg?auto=compress&cs=tinysrgb&w=800&q=80"
                 alt="Equipe B&C Saúde"
                 className="sobre-box-img"
               />

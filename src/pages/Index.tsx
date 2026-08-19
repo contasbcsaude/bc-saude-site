@@ -600,7 +600,7 @@ const Index = () => {
           <div className="services-grid">
             <div className="service-card reveal">
               <img
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80"
+                src="/img/foto-sobre.jpg"
                 alt="Medicina do Trabalho"
                 className="service-img"
               />

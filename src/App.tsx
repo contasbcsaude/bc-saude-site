@@ -1,12 +1,12 @@
-import Index from './pages/Index'
-import Diagnostico from './pages/Diagnostico'
-
 function App() {
   const path = window.location.pathname
-  if (path === '/diagnostico' || path === '/bc-saude-site/diagnostico') {
+  if (path.includes('/diagnostico')) {
     return <Diagnostico />
   }
   return <Index />
 }
+
+import Index from './pages/Index'
+import Diagnostico from './pages/Diagnostico'
 
 export default App

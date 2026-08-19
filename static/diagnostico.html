@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Diagnóstico — B&C Saúde</title>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:#0d0d0d;background:#fff;line-height:1.6}
+.dtop{background:#0a2540;padding:56px 24px 40px;text-align:center}
+.dtop h1{color:#fff;font-size:1.8rem;font-weight:800;margin-bottom:8px}
+.dtop p{color:#c3d2e0;max-width:640px;margin:0 auto;font-size:1rem}
+.dmain{max-width:820px;margin:0 auto;padding:32px 24px 64px}
+.dbox{background:#fff;border-radius:20px;box-shadow:0 12px 40px rgba(10,37,64,.14);padding:36px}
+.dbox h2{color:#0a2540;font-size:1.15rem;margin-bottom:6px}
+.dbox .dsub{color:#5b6b7a;font-size:.95rem;margin-bottom:24px}
+.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.dfield{display:flex;flex-direction:column;gap:6px}
+.dfield.full{grid-column:1/-1}
+.dfield label{font-size:.85rem;font-weight:600;color:#0a2540}
+.dfield input,.dfield select{padding:12px 16px;border:1.5px solid #dfe6ec;border-radius:10px;font-size:.95rem;font-family:inherit;background:#fff}
+.dfield input:focus,.dfield select:focus{outline:none;border-color:#2a6a8e}
+.dstitle{grid-column:1/-1;font-size:.85rem;font-weight:700;color:#2a6a8e;text-transform:uppercase;letter-spacing:.08em;margin-top:12px;padding-top:16px;border-top:1px solid #dfe6ec}
+.dsubmit{margin-top:24px;width:100%;background:#2a6a8e;color:#fff;padding:14px 28px;border:none;border-radius:999px;font-weight:600;font-size:.95rem;cursor:pointer;font-family:inherit}
+.dsubmit:hover{background:#3d8ab5}
+.dnote{text-align:center;margin-top:12px;font-size:.8rem;color:#5b6b7a}
+.dok{text-align:center;padding:40px 20px}
+.dok h3{color:#15803d;font-size:1.3rem;margin-bottom:12px}
+.dok p{color:#5b6b7a;max-width:520px;margin:0 auto 20px}
+.bwa{display:inline-block;background:#25d366;color:#fff;text-decoration:none;padding:14px 28px;border-radius:999px;font-weight:600}
+.dback{display:inline-block;margin-top:20px;color:#0a2540;text-decoration:none;font-size:.9rem;font-weight:600}
+.derro{background:#fef2f2;border:1px solid #fecaca;color:#b91c1c;padding:10px 16px;border-radius:10px;font-size:.9rem;font-weight:600;margin-bottom:16px}
+@media(max-width:720px){.dgrid{grid-template-columns:1fr}.dbox{padding:24px}}
+</style>
+</head>
+<body>
+<div class="dtop">
+<h1>Diagnóstico gratuito — Compliance Trabalhista (CLT 2026)</h1>
+<p>Leva menos de 3 minutos. Nossa equipe analisa e envia o resultado para o seu e-mail.</p>
+</div>
+<div class="dmain">
+<div id="form-area">
+<div class="dbox">
+<h2>Diagnóstico de Compliance Trabalhista — Novas Regras CLT 2026</h2>
+<p class="dsub">Avalie a maturidade de compliance trabalhista e SST da sua empresa.</p>
+<form id="diag-form">
+<div class="dgrid">
+<div class="dstitle">Dados da empresa</div>
+<div class="dfield"><label>Empresa *</label><input type="text" name="razao_social" required /></div>
+<div class="dfield"><label>CNPJ</label><input type="text" name="cnpj" /></div>
+<div class="dfield"><label>Cidade/UF</label><input type="text" name="cidade_uf" /></div>
+<div class="dfield"><label>Colaboradores ativos? *</label><select name="colaboradores" required><option value="">Selecione…</option><option>1 a 10</option><option>11 a 20</option><option>21 a 30</option><option>31 a 50</option><option>51 a 100</option><option>101 a 200</option><option>201 a 500</option><option>501 a 1.000</option><option>Acima de 1.000</option></select></div>
+<div class="dstitle">Quem está respondendo</div>
+<div class="dfield"><label>Nome *</label><input type="text" name="nome" required /></div>
+<div class="dfield"><label>Telefone/WhatsApp *</label><input type="tel" name="telefone" placeholder="(67) 9 0000-0000" required /></div>
+<div class="dfield full"><label>E-mail *</label><input type="email" name="email" required /></div>
+<div class="dstitle">Compliance Trabalhista — Novas Regras CLT 2026</div>
+<div class="dfield full"><label>1. PGR e PCMSO atualizados? *</label><select name="pgr" required><option value="">Selecione…</option><option>Sim</option><option>Não</option><option>Parcialmente</option><option>Não sei</option></select></div>
+<div class="dfield full"><label>2. Possui LTCAT? *</label><select name="ltcat" required><option value="">Selecione…</option><option>Sim</option><option>Não</option><option>Em elaboração</option><option>Não sei</option></select></div>
+<div class="dfield full"><label>3. Políticas de SST documentadas? *</label><select name="politicas" required><option value="">Selecione…</option><option>Sim</option><option>Parcialmente</option><option>Não</option><option>Não sei</option></select></div>
+<div class="dfield full"><label>4. Treinamentos NR em dia? *</label><select name="treinamentos" required><option value="">Selecione…</option><option>Sim</option><option>Parcialmente</option><option>Não</option><option>Não sei</option></select></div>
+<div class="dfield full"><label>5. Auditoria interna de SST? *</label><select name="auditoria" required><option value="">Selecione…</option><option>Sim</option><option>Não</option><option>Em implantação</option><option>Não sei</option></select></div>
+<div class="dfield full"><label>6. Documentação pronta para fiscalização? *</label><select name="docs" required><option value="">Selecione…</option><option>Sim</option><option>Parcialmente</option><option>Não</option><option>Não sei</option></select></div>
+</div>
+<button type="submit" class="dsubmit">Receber meu diagnóstico gratuito</button>
+<p class="dnote">Seus dados são seguros e usados apenas para personalizar nosso atendimento.</p>
+</form>
+</div>
+</div>
+</div>
+<script>
+document.getElementById('diag-form').addEventListener('submit',function(e){
+e.preventDefault();
+var form=e.currentTarget,data=Object.fromEntries(new FormData(form).entries());
+data._subject='Novo Diagnóstico Compliance — Site B&C Saúde';
+data._template='table';data._captcha='false';
+fetch('https://formsubmit.co/ajax/sac.bcsaude@gmail.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)}).then(function(r){
+if(r.ok){document.getElementById('form-area').innerHTML='<div class="dbox dok"><h3>Diagnóstico recebido!</h3><p>Nossa equipe vai analisar e entrar em contato em até 2 dias úteis.</p><a href="https://wa.me/5567981131076" class="bwa">WhatsApp</a><br><a href="/" class="dback">← Voltar</a></div>'}else{throw new Error()}
+}).catch(function(){alert('Não foi possível enviar. Tente novamente.')});
+});
+</script>
+</body>
+</html>

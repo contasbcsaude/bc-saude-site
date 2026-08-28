@@ -186,6 +186,13 @@ const Index = () => {
         .service-list svg{flex-shrink:0;color:var(--accent);margin-top:2px}
         .service-link{color:var(--accent);font-weight:600;font-size:.9rem;text-decoration:none}
         .service-link:hover{color:var(--accent-claro)}
+
+        /* ===== EXAMES COMPLEMENTARES ===== */
+        .serv-exams{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;margin-top:44px}
+        .serv-exams-label{font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
+        .serv-exams-tags{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+        .serv-exam-tag{background:rgba(42,106,142,.08);border:1px solid rgba(42,106,142,.18);color:var(--accent);font-size:.87rem;font-weight:600;padding:8px 18px;border-radius:999px;transition:var(--transition)}
+        .serv-exam-tag:hover{background:rgba(42,106,142,.16);transform:translateY(-2px)}
         @media(max-width:960px){.services-grid{grid-template-columns:1fr;gap:16px}}
 
         /* ===== GESTAO ===== */
@@ -209,14 +216,15 @@ const Index = () => {
         @media(max-width:960px){.cta-box{padding:36px 24px}.cta-box h2{font-size:1.7rem}}
 
         /* ===== UNIDADES ===== */
-        .units-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+        .units-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
         .unit-card{background:#fff;border:1px solid var(--borda);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:var(--transition)}
         .unit-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
         .unit-img{width:100%;height:160px;object-fit:cover;display:block}
         .unit-body{padding:20px}
         .unit-body h4{color:var(--petroleo);font-size:1.05rem;margin-bottom:6px}
         .unit-body p{color:var(--cinza);font-size:.88rem}
-        @media(max-width:960px){.units-grid{grid-template-columns:1fr;gap:16px}}
+        @media(max-width:1100px){.units-grid{grid-template-columns:repeat(2,1fr);gap:16px}}
+        @media(max-width:620px){.units-grid{grid-template-columns:1fr;gap:16px}}
 
         /* ===== CONTATO ===== */
         .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
@@ -463,8 +471,8 @@ const Index = () => {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                 </svg>
               </div>
-              <h3>3 unidades em MS</h3>
-              <p>Jardim, Bonito e Bela Vista — com estrutura para atender todo o estado.</p>
+              <h3>04 unidades em MS</h3>
+              <p>Jardim, Bonito, Bela Vista e Nioaque — com estrutura para atender todo o estado.</p>
             </div>
             <div className="conf-card reveal">
               <div className="conf-icon">
@@ -574,7 +582,7 @@ const Index = () => {
                   <div className="stat-label">Anos de experiência</div>
                 </div>
                 <div className="stat-card">
-                  <div className="stat-num">3</div>
+                  <div className="stat-num">04</div>
                   <div className="stat-label">Unidades em MS</div>
                 </div>
               </div>
@@ -619,7 +627,7 @@ const Index = () => {
                     >
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
-                    PCMSO e exames ocupacionais
+                    Admissional, periódico, retorno e demissional (ASO)
                   </li>
                   <li>
                     <svg
@@ -632,7 +640,7 @@ const Index = () => {
                     >
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
-                    Exames complementares
+                    Audiometria e espirometria
                   </li>
                   <li>
                     <svg
@@ -645,7 +653,20 @@ const Index = () => {
                     >
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
-                    Gestão de saúde do trabalhador
+                    Acuidade visual, ECG e EEG
+                  </li>
+                  <li>
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    Exames laboratoriais
                   </li>
                 </ul>
               </div>
@@ -757,6 +778,17 @@ const Index = () => {
               </div>
             </div>
           </div>
+          <div className="serv-exams reveal">
+            <div className="serv-exams-label">Exames complementares</div>
+            <div className="serv-exams-tags">
+              <span className="serv-exam-tag">Audiometria</span>
+              <span className="serv-exam-tag">Espirometria</span>
+              <span className="serv-exam-tag">Acuidade visual</span>
+              <span className="serv-exam-tag">ECG</span>
+              <span className="serv-exam-tag">EEG</span>
+              <span className="serv-exam-tag">Laboratoriais</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -792,6 +824,19 @@ const Index = () => {
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                   Agendamento e convocação de exames
+                </li>
+                <li>
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  Exames complementares com estrutura própria em 04 unidades
                 </li>
                 <li>
                   <svg
@@ -902,6 +947,18 @@ const Index = () => {
               <div className="unit-body">
                 <h4>Bonito/MS</h4>
                 <p>R. Pércio Sharman 374</p>
+                <p>(67) 9 8113-1076</p>
+              </div>
+            </div>
+            <div className="unit-card reveal">
+              <img
+                src="/nioaque-unit.jpg"
+                alt="Unidade Nioaque"
+                className="unit-img"
+              />
+              <div className="unit-body">
+                <h4>Nioaque/MS</h4>
+                <p>Av. XV de Novembro, 536 - Centro</p>
                 <p>(67) 9 8113-1076</p>
               </div>
             </div>
